@@ -3,7 +3,6 @@ var main = function() {
     $('.dropdown-menu').toggle();
   });
 
-
   $('.arrow-next').click(function() {
     var currentSlide = $('.active-slide');
     var nextSlide = currentSlide.next();
@@ -23,7 +22,6 @@ var main = function() {
     nextDot.addClass('active-dot');
   });
 
-
   $('.arrow-prev').click(function() {
     var currentSlide = $('.active-slide');
     var prevSlide = currentSlide.prev();
@@ -42,7 +40,5 @@ var main = function() {
     currentDot.removeClass('active-dot');
     prevDot.addClass('active-dot');
   });
-
 }
-
 $(document).ready(main);
